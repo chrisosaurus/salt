@@ -25,7 +25,8 @@ import Data.Typeable
 data State a
         = State
         { stateConfig   :: !Config
-        , stateModule   :: !(Module a) }
+        , stateModule   :: !(Module a)
+        , stateHeap     :: !...       }
         deriving Show
 
 

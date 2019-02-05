@@ -31,6 +31,8 @@ primTypeCtors
         , ("Word16",    TData)
         , ("Word32",    TData)
         , ("Word64",    TData)
+        , ("Addr",      TData)
+        , ("Ptr",       [TData] :=> TData)
         , ("Text",      TData)
         , ("Symbol",    TData)
         , ("Option",    [TData] :=> TData)

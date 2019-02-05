@@ -124,6 +124,8 @@ data Value a
         | VList     (Type a) [Value a]          -- ^ List value.
         | VSet      (Type a) (Set (Value ()))   -- ^ Set value.
         | VMap      (Type a) (Type a) (Map (Value ()) (Value a))
+        | VAddr     Word.Word                   -- ^ An address on the heap.
+        | VPtr      Word.Word (Type a)          -- ^ A pointer into the heap and the type of the pointed-to-object.
                                                 -- ^ Map value.
         | VClosure  (TermClosure a)             -- ^ Closure.
         deriving (Show, Eq, Ord)

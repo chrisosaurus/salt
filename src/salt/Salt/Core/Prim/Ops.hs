@@ -27,6 +27,8 @@ import Salt.Core.Prim.Ops.Word8
 import Salt.Core.Prim.Ops.Word16
 import Salt.Core.Prim.Ops.Word32
 import Salt.Core.Prim.Ops.Word64
+import Salt.Core.Prim.Ops.Addr
+import Salt.Core.Prim.Ops.Ptr
 
 
 primOps :: Map Name Prim
@@ -35,6 +37,7 @@ primOps
         [ primOpsBool,   primOpsNat
         , primOpsInt, primOpsInt8, primOpsInt16, primOpsInt32, primOpsInt64
         , primOpsWord, primOpsWord8, primOpsWord16, primOpsWord32, primOpsWord64
+        , primOpsAddr, primOpsPtr
         , primOpsSymbol
         , primOpsList,   primOpsSet,  primOpsMap
         , primOpsDebug
